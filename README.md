@@ -8,11 +8,12 @@ Para inicializar a API vocês deverão:
 
 Exemplo do arquivo .env (trocar os valores das chaves pelos dados do seu banco):
 ```
-PG_HOST=localhost
-PG_PORT=5432
-PG_USER=postgres
-PG_PASSWORD=postgres
-PG_DATABASE=exemplo
+PG_HOST = localhost
+PG_PORT = 5432
+PG_USERNAME = postgres
+PG_PASSWORD = postgres
+PG_DATABASE = teste
+API_PORT = 3000
 ```
 
 3. ```npm i```

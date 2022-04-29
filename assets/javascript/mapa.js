@@ -44,7 +44,7 @@ function salvar(){
         'Content-Type': 'application/json'
       },
       body: JSON.stringify(obj)
-    }).then(response =>{console.log(response)})
+    }).then(response =>{alert('Salvo com sucesso')})
     .catch(error => alert('Falha ao salvar!'));    
 
 }
