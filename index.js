@@ -11,6 +11,8 @@ app.listen(port, ()=>{
     console.log(`App running on port ${port}.`);
 });
 
-const db = require('./database/database');
+const pontoController = require('./controllers/PontoController');
 
-app.post('/pontos', db.addPonto);
+app.post('/addPonto', pontoController.addPonto);
+
+app.get('/', pontoController.sincronizar);

@@ -37,14 +37,14 @@ function salvar(){
         lng: marker.getPosition().lng()
     };
 
-    fetch("http://localhost:3000/pontos",{
+    fetch("http://localhost:3000/addPonto",{
       method: 'POST',
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
       },
       body: JSON.stringify(obj)
-    }).then(response =>{alert('Inserido!')})
+    }).then(response =>{console.log(response)})
     .catch(error => alert('Falha ao salvar!'));    
 
 }
