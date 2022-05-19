@@ -14,6 +14,6 @@ app.listen(port, ()=>{
 
 const pontoController = require('./controllers/PontoController');
 
-app.post('/addPonto', pontoController.addPonto);
+app.post('/pontos', pontoController.addPonto);
 
 app.get('/', pontoController.sincronizar);

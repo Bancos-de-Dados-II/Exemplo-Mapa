@@ -37,7 +37,7 @@ function salvar(){
         lng: marker.getPosition().lng()
     };
 
-    fetch("http://localhost:3000/addPonto",{
+    fetch("http://localhost:3000/pontos",{
       method: 'POST',
       headers: {
         'Accept': 'application/json',
