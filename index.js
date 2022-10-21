@@ -16,4 +16,6 @@ const pontoController = require('./controllers/PontoController');
 
 app.post('/pontos', pontoController.addPonto);
 
+app.get('/pontos', pontoController.getPontos);
+
 app.get('/', pontoController.sincronizar);

@@ -1,4 +1,3 @@
-const res = require('express/lib/response');
 const Ponto = require('../models/ponto');
 
 const addPonto = async (request, response) =>{
@@ -17,9 +16,14 @@ const addPonto = async (request, response) =>{
 
 };
 
+const getPontos = async (request, response) =>{
+    const pessoas = await Ponto.findAll();
+    response.status(200).send(pessoas);
+}
+
 const sincronizar = async(request, response) =>{
     await Ponto.sync();
     response.status(200).send('Sincronizado');
-}
+};
 
-module.exports = {addPonto, sincronizar};
+module.exports = {addPonto, sincronizar, getPontos};
