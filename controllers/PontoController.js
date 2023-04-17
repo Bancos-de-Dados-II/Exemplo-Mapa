@@ -17,8 +17,8 @@ const addPonto = async (request, response) =>{
 };
 
 const getPontos = async (request, response) =>{
-    const pessoas = await Ponto.findAll();
-    response.status(200).send(pessoas);
+    const pontos = await Ponto.findAll();
+    response.status(200).send(pontos);
 }
 
 const sincronizar = async(request, response) =>{
